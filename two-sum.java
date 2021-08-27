@@ -3,6 +3,7 @@ import java.util.Map;
 
 //TODO: Add Comments on how hashMap works
 
+//What two numbers add together to get to target
 class twoSum {
     // Reversing an Integer Value passed in.
     public static void main(String[] args) {

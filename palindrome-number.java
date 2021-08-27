@@ -1,5 +1,6 @@
 import javax.lang.model.util.ElementScanner6;
 
+//TODO: Add Comments and go over understanding later.
 class palindromeNumber {
 
     public static void main(String[] args) {
@@ -67,32 +68,31 @@ class palindromeNumber {
     }
 
     public static boolean isPalindrome_2(int x) {
-    
-        if (x == 0){
+
+        if (x == 0) {
             return true;
         }
-        
-        if (x < 0 || x % 10 == 0){
+
+        if (x < 0 || x % 10 == 0) {
             return false;
         }
-        
+
         int reversed_int = 0;
-        
+
         while (x > reversed_int) {
             int pop = x % 10;
-            
+
             x /= 10;
-            
+
             reversed_int = (reversed_int * 10) + pop;
         }
-        
+
         if (x == reversed_int || x == reversed_int / 10) {
             return true;
-        }else {
+        } else {
             return false;
         }
-        
-        
+
     }
 
 }
